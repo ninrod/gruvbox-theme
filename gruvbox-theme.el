@@ -89,6 +89,7 @@
       (gruvbox-dark_red        (if (display-graphic-p) "#421E1E" "color-52"))
       (gruvbox-dark_blue       (if (display-graphic-p) "#2B3C44" "color-4"))
       (gruvbox-dark_aqua       (if (display-graphic-p) "#36473A" "color-23"))
+      (background-darker       "#22252c")
 
       (gruvbox-delimiter-one    (if (display-graphic-p) "#458588" "color-30"))
       (gruvbox-delimiter-two    (if (display-graphic-p) "#b16286" "color-168"))
@@ -115,8 +116,10 @@
     ;; UI
     `(default                           ((t (:background ,gruvbox-bg :foreground ,gruvbox-light2))))
     `(cursor                            ((t (:background ,gruvbox-light0))))
-    `(mode-line                         ((t (:box nil :background ,gruvbox-dark2 :foreground ,gruvbox-light2))))
-    `(mode-line-inactive                ((t (:box nil :background ,gruvbox-dark1 :foreground ,gruvbox-light4))))
+    `(mode-line                         ((t (:box ,'(:line-width 6 :color "#282828")
+                                                  :background ,gruvbox-dark0 :foreground ,gruvbox-light0))))
+    `(mode-line-inactive                ((t (:box ,'(:line-width 6 :color "#22252c")
+                                                  :background ,background-darker :foreground ,gruvbox-dark4))))
     `(fringe                            ((t (:background ,gruvbox-bg))))
     `(linum                             ((t (:background ,gruvbox-bg :foreground ,gruvbox-dark4))))
     `(hl-line                           ((t (:background ,gruvbox-dark1))))
@@ -374,6 +377,7 @@
     `(sml/prefix            ((t (:foreground ,gruvbox-light1))))
     `(sml/read-only         ((t (:foreground ,gruvbox-neutral_blue))))
     `(persp-selected-face   ((t (:foreground ,gruvbox-neutral_orange))))
+
 
         ;;isearch
     `(isearch               ((t (:background ,gruvbox-bright_orange :foreground ,gruvbox-dark0_soft :underline nil))))
