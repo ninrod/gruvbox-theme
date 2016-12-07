@@ -116,9 +116,9 @@
     ;; UI
     `(default                           ((t (:background ,gruvbox-bg :foreground ,gruvbox-light2))))
     `(cursor                            ((t (:background ,gruvbox-light0))))
-    `(mode-line                         ((t (:box ,'(:line-width 6 :color "#282828")
+    `(mode-line                         ((t (:box nil
                                                   :background ,gruvbox-dark0 :foreground ,gruvbox-light0))))
-    `(mode-line-inactive                ((t (:box ,'(:line-width 6 :color "#22252c")
+    `(mode-line-inactive                ((t (:box nil
                                                   :background ,background-darker :foreground ,gruvbox-dark4))))
     `(fringe                            ((t (:background ,gruvbox-bg))))
     `(linum                             ((t (:background ,gruvbox-bg :foreground ,gruvbox-dark4))))
