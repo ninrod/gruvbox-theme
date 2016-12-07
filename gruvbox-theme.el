@@ -15,8 +15,8 @@
 ;; theme support in Emacs 24.
 ;;
 ;; This theme contains my own modifications and it's a bit opinionated
-;; sometimes, deviating from the original because of it. I try to stay true to
-;; the original as much as possible, however. I only make changes where I would
+;; sometimes, deviating from the original because of it.  I try to stay true to
+;; the original as much as possible, however.  I only make changes where I would
 ;; have made the changes on the original.
 ;;
 ;; Since there is no direct equivalent in syntax highlighting from Vim to Emacs
@@ -113,7 +113,7 @@
     'gruvbox
 
     ;; UI
-    `(default                           ((t (:background ,gruvbox-bg :foreground ,gruvbox-light0))))
+    `(default                           ((t (:background ,gruvbox-bg :foreground ,gruvbox-light2))))
     `(cursor                            ((t (:background ,gruvbox-light0))))
     `(mode-line                         ((t (:box nil :background ,gruvbox-dark2 :foreground ,gruvbox-light2))))
     `(mode-line-inactive                ((t (:box nil :background ,gruvbox-dark1 :foreground ,gruvbox-light4))))
@@ -136,7 +136,7 @@
     `(font-lock-string-face             ((t (:foreground ,gruvbox-neutral_green))))
     `(font-lock-variable-name-face      ((t (:foreground ,gruvbox-neutral_blue))))
     `(font-lock-type-face               ((t (:foreground ,gruvbox-neutral_purple))))
-    `(font-lock-warning-face            ((t (:foreground ,gruvbox-neutral_red :bold t))))
+    `(font-lock-warning-face            ((t (:foreground ,gruvbox-bright_red :background ,gruvbox-dark_red :bold t))))
 
     ;; whitespace-mode
     `(whitespace-space                  ((t (:background ,gruvbox-bg :foreground ,gruvbox-dark4))))
@@ -197,6 +197,14 @@
     `(diff-indicator-added              ((t (:inherit diff-added))))
     `(diff-indicator-removed            ((t (:inherit diff-removed))))
 
+    ;; magit
+    `(magit-section-highlight ((t (:background ,gruvbox-dark0_soft))))
+    `(magit-section-heading ((t (:foreground ,gruvbox-light4 :weight bold))))
+    `(magit-branch-current ((t (:foreground ,gruvbox-bright_blue :box 1))))
+    `(magit-branch-local ((t (:foreground ,gruvbox-bright_purple :box 1))))
+    `(magit-branch-remote ((t (:foreground ,gruvbox-bright_green :box 1))))
+
+    ;; js2
     `(js2-warning                       ((t (:underline (:color ,gruvbox-bright_yellow :style wave)))))
     `(js2-error                         ((t (:underline (:color ,gruvbox-bright_red :style wave)))))
     `(js2-external-variable             ((t (:underline (:color ,gruvbox-bright_aqua :style wave)))))
@@ -213,6 +221,7 @@
 
 
     ;; popup
+
     `(popup-face                                ((t (:foreground ,gruvbox-light1 :background ,gruvbox-dark1))))
     `(popup-menu-mouse-face                     ((t (:foreground ,gruvbox-light0 :background ,gruvbox-faded_green))))
     `(popup-menu-selection-face                 ((t (:foreground ,gruvbox-light0 :background ,gruvbox-faded_green))))
@@ -268,9 +277,9 @@
     `(company-scrollbar-fg              ((t (:background ,gruvbox-dark0_soft))))
     `(company-tooltip                   ((t (:background ,gruvbox-dark0_soft))))
     `(company-tooltip-annotation        ((t (:foreground ,gruvbox-neutral_green))))
-    `(company-tooltip-selection         ((t (:foreground ,gruvbox-neutral_purple))))
-    `(company-tooltip-common            ((t (:foreground ,gruvbox-neutral_blue :underline t))))
-    `(company-tooltip-common-selection  ((t (:foreground ,gruvbox-neutral_blue :underline t))))
+    `(company-tooltip-selection         ((t (:foreground ,gruvbox-bright_blue :background ,gruvbox-dark_blue))))
+    `(company-tooltip-common            ((t (:foreground ,gruvbox-bright_aqua :underline t))))
+    `(company-tooltip-common-selection  ((t (:foreground ,gruvbox-bright_red :background ,gruvbox-dark_red :underline t))))
     `(company-preview-common            ((t (:foreground ,gruvbox-neutral_purple))))
 
     ;; Term
@@ -299,6 +308,7 @@
 
     ;; org-mode
     `(org-hide                          ((t (:foreground ,gruvbox-dark0))))
+    `(org-block                         ((t (:foreground ,gruvbox-light3 :background ,gruvbox-dark0_soft))))
     `(org-level-1                       ((t (:foreground ,gruvbox-neutral_blue))))
     `(org-level-2                       ((t (:foreground ,gruvbox-neutral_yellow))))
     `(org-level-3                       ((t (:foreground ,gruvbox-neutral_purple))))
@@ -366,9 +376,10 @@
     `(persp-selected-face   ((t (:foreground ,gruvbox-neutral_orange))))
 
         ;;isearch
-    `(isearch                       ((t (:foreground ,gruvbox-black :background ,gruvbox-neutral_orange))))
-    `(lazy-highlight           ((t (:foreground ,gruvbox-black :background ,gruvbox-neutral_yellow))))
-    `(isearch-fail                  ((t (:foreground ,gruvbox-light0 :background ,gruvbox-bright_red))))
+    `(isearch               ((t (:background ,gruvbox-bright_orange :foreground ,gruvbox-dark0_soft :underline nil))))
+    `(lazy-highlight        ((t (:foreground ,gruvbox-bright_orange :background ,gruvbox-dark0_soft :underline t :weight bold))))
+
+    `(isearch-fail          ((t (:foreground ,gruvbox-light0 :background ,gruvbox-bright_red))))
 
     ;; anzu-mode
     `(anzu-mode-line        ((t (:foreground ,gruvbox-bright_yellow :weight bold))))
