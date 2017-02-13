@@ -171,7 +171,7 @@
   (font-lock-builtin-face                            (:foreground gruvbox-neutral_orange))
   (font-lock-constant-face                           (:foreground gruvbox-neutral_purple))
   (font-lock-comment-face                            (:foreground gruvbox-dark4 :slant 'italic))
-  (font-lock-function-name-face                      (:foreground gruvbox-neutral_yellow))
+  (font-lock-function-name-face                      (:foreground gruvbox-faded_aqua))
   (font-lock-keyword-face                            (:foreground gruvbox-neutral_red))
   (font-lock-string-face                             (:foreground gruvbox-neutral_green))
   (font-lock-variable-name-face                      (:foreground gruvbox-neutral_blue))
