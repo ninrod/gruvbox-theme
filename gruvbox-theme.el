@@ -176,7 +176,7 @@
   (font-lock-string-face                             (:foreground gruvbox-neutral_green))
   (font-lock-variable-name-face                      (:foreground gruvbox-neutral_blue))
   (font-lock-type-face                               (:foreground gruvbox-neutral_purple))
-  (font-lock-warning-face                            (:foreground gruvbox-neutral_red :bold t))
+  (font-lock-warning-face                            (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
 
   ;; whitespace-mode
   (whitespace-space                          (:background gruvbox-bg :foreground gruvbox-dark4))
@@ -474,6 +474,8 @@
   (magit-diff-add                            (:foreground gruvbox-bright_green))
   (magit-diff-del                            (:foreground gruvbox-bright_red))
   (magit-diff-file-header                    (:foreground gruvbox-bright_blue))
+  (magit-diff-file-heading-highlight         (:foreground gruvbox-bright_purple))
+  (magit-diff-file-heading-selection         (:foreground gruvbox-bright_red))
   (magit-diff-hunk-header                    (:foreground gruvbox-neutral_aqua))
   (magit-diff-merge-current                  (:background gruvbox-dark_yellow))
   (magit-diff-merge-diff3-separator          (:foreground gruvbox-neutral_orange :weight 'bold))
