@@ -108,6 +108,9 @@
   (gruvbox-dark_red        "#421E1E" "#5f0000")
   (gruvbox-dark_blue       "#2B3C44" "#000087")
   (gruvbox-dark_aqua       "#36473A" "#005f5f")
+  (gruvbox-dark_orange     "#613620" "#af5f00")
+
+  (gruvbox-muted_orange    "#A24921" "#af5f00")
 
   (gruvbox-delimiter-one   "#458588" "#008787")
   (gruvbox-delimiter-two   "#b16286" "#d75f87")
@@ -412,12 +415,15 @@
   (show-paren-match                          (:background gruvbox-dark3 :weight 'bold))
   (show-paren-mismatch                       (:background gruvbox-bright_red :foreground gruvbox-dark3 :weight 'bold))
 
-  ;; ivy
-  (ivy-current-match                         (:foreground gruvbox-white :weight 'bold :underline t))
-  (ivy-minibuffer-match-face-1               (:foreground gruvbox-neutral_orange))
-  (ivy-minibuffer-match-face-2               (:foreground gruvbox-neutral_yellow))
-  (ivy-minibuffer-match-face-3               (:foreground gruvbox-faded_orange))
-  (ivy-minibuffer-match-face-4               (:foreground gruvbox-faded_yellow))
+  ;; MODE SUPPORT: ivy
+  (ivy-current-match                         (:foreground gruvbox-light0 :background gruvbox-faded_blue))
+  (ivy-minibuffer-match-face-1               (:background gruvbox-dark1))
+  (ivy-minibuffer-match-face-2               (:background gruvbox-dark2))
+  (ivy-minibuffer-match-face-3               (:background gruvbox-faded_aqua))
+  (ivy-minibuffer-match-face-4               (:background gruvbox-faded_purple))
+  (ivy-confirm-face                          (:foreground gruvbox-bright_green))
+  (ivy-match-required-face                   (:foreground gruvbox-bright_red))
+  (ivy-remote                                (:foreground gruvbox-neutral_blue))
 
   ;; MODE SUPPORT: dired+
   (diredp-file-name                          (:foreground gruvbox-light2))
@@ -439,6 +445,24 @@
   (diredp-read-priv                          (:foreground gruvbox-bright_red  :background gruvbox-dark_red))
   (diredp-write-priv                         (:foreground gruvbox-bright_aqua :background gruvbox-dark_aqua)))
 
+ (defface gruvbox-modeline-three-active
+   `((t
+      (:foreground ,gruvbox-muted_orange
+                   :background ,gruvbox-dark0
+                   ;; :height 120
+                   :inverse-video nil
+                   :box (:line-width 6 :color ,gruvbox-dark0_hard :style nil))))
+   "gruvbox modeline inactive three")
+
+ (defface gruvbox-modeline-three-inactive
+   `((t
+      (:foreground ,gruvbox-dark_orange
+                   :background ,gruvbox-dark1
+                   ;; :height 120
+                   :inverse-video nil
+                   :box (:line-width 6 :color ,gruvbox-dark1 :style nil))))
+   "gruvbox modeline active three")
+
  (custom-theme-set-variables 'gruvbox
                              `(ansi-color-names-vector
                                [,gruvbox-dark1
@@ -449,6 +473,24 @@
                                 ,gruvbox-neutral_purple
                                 ,gruvbox-neutral_aqua
                                 ,gruvbox-light1])))
+
+
+
+(defun gruvbox-modeline-three ()
+  "Optional modeline style three for gruvbox."
+  (interactive)
+  (set-face-attribute 'mode-line nil
+                      :foreground (face-attribute 'gruvbox-modeline-three-active :foreground)
+                      :background (face-attribute 'gruvbox-modeline-three-active :background)
+                      ;; :height 120
+                      :inverse-video nil
+                      :box `(:line-width 6 :color ,(face-attribute 'gruvbox-modeline-three-active :background) :style nil))
+  (set-face-attribute 'mode-line-inactive nil
+                      :foreground (face-attribute 'gruvbox-modeline-three-inactive :foreground)
+                      :background (face-attribute 'gruvbox-modeline-three-inactive :background)
+                      ;; :height 120
+                      :inverse-video nil
+                      :box `(:line-width 6 :color ,(face-attribute 'gruvbox-modeline-three-inactive :background) :style nil)))
 
 ;;;###autoload
 (and load-file-name
