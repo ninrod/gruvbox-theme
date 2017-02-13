@@ -383,8 +383,8 @@
   (persp-selected-face                       (:foreground gruvbox-neutral_orange))
 
   ;;isearch
-  (isearch                                   (:foreground gruvbox-black :background gruvbox-neutral_orange))
-  (lazy-highlight                            (:foreground gruvbox-black :background gruvbox-neutral_yellow))
+  (isearch                                   (:foreground gruvbox-dark_orange :background gruvbox-bright_orange))
+  (lazy-highlight                            (:foreground gruvbox-bright_orange :background gruvbox-dark_orange :underline t))
   (isearch-fail                              (:foreground gruvbox-light0 :background gruvbox-bright_red))
 
   ;; markdown-mode
