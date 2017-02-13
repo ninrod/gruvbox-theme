@@ -482,13 +482,11 @@
   (set-face-attribute 'mode-line nil
                       :foreground (face-attribute 'gruvbox-modeline-three-active :foreground)
                       :background (face-attribute 'gruvbox-modeline-three-active :background)
-                      ;; :height 120
                       :inverse-video nil
                       :box `(:line-width 6 :color ,(face-attribute 'gruvbox-modeline-three-active :background) :style nil))
   (set-face-attribute 'mode-line-inactive nil
                       :foreground (face-attribute 'gruvbox-modeline-three-inactive :foreground)
                       :background (face-attribute 'gruvbox-modeline-three-inactive :background)
-                      ;; :height 120
                       :inverse-video nil
                       :box `(:line-width 6 :color ,(face-attribute 'gruvbox-modeline-three-inactive :background) :style nil)))
 
