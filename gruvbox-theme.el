@@ -239,7 +239,8 @@
 
   (js2-warning                               (:underline (:color gruvbox-bright_yellow :style 'wave)))
   (js2-error                                 (:underline (:color gruvbox-bright_red :style 'wave)))
-  (js2-external-variable                     (:underline (:color gruvbox-bright_aqua :style 'wave)))
+  (js2-external-variable                     (:foreground gruvbox-faded_red))
+  (js2-object-property                       (:foreground gruvbox-muted_purple))
   (js2-jsdoc-tag                             (:background nil :foreground gruvbox-gray  ))
   (js2-jsdoc-type                            (:background nil :foreground gruvbox-light4))
   (js2-jsdoc-value                           (:background nil :foreground gruvbox-light3))
@@ -449,6 +450,11 @@
   ;; MODE SUPPORT: eyebrowse
   (eyebrowse-mode-line-active               (:foreground gruvbox-faded_purple))
   (eyebrowse-mode-line-inactive             (:foreground gruvbox-black))
+
+   ;; web-mode
+  (nxml-element-local-name                  (:foreground gruvbox-bright_purple))
+  (web-mode-html-tag-face                   (:foreground gruvbox-bright_purple))
+  (web-mode-symbol-face                     (:foreground gruvbox-faded_red))
 
   ;; MODE SUPPORT: magit
   (magit-branch                              (:foreground gruvbox-turquoise4 :background nil :box 1))
