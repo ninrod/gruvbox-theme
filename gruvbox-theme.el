@@ -135,6 +135,8 @@
   (gruvbox-mid_orange      "#603000" "#af5f00")
   (gruvbox-mid_cyan        "#005560" "#005f87")
 
+  (gruvbox-corrupted-mid_cyan "#005f87" "#005f87")
+
   (gruvbox-delimiter-one   "#458588" "#008787")
   (gruvbox-delimiter-two   "#b16286" "#d75f87")
   (gruvbox-delimiter-three "#8ec07c" "#87af87")
@@ -451,14 +453,19 @@
   (show-paren-mismatch                       (:background gruvbox-bright_red :foreground gruvbox-dark3 :weight 'bold))
 
   ;; MODE SUPPORT: ivy
+  (ivy-confirm-face                          (:foreground gruvbox-bright_green))
   (ivy-current-match                         (:foreground gruvbox-light0 :background gruvbox-faded_blue))
+  (ivy-match-required-face                   (:foreground gruvbox-bright_red))
   (ivy-minibuffer-match-face-1               (:background gruvbox-dark1))
   (ivy-minibuffer-match-face-2               (:background gruvbox-dark2))
   (ivy-minibuffer-match-face-3               (:background gruvbox-faded_aqua))
   (ivy-minibuffer-match-face-4               (:background gruvbox-faded_purple))
-  (ivy-confirm-face                          (:foreground gruvbox-bright_green))
-  (ivy-match-required-face                   (:foreground gruvbox-bright_red))
   (ivy-remote                                (:foreground gruvbox-neutral_blue))
+  (ivy-subdir                                (:foreground gruvbox-corrupted-mid_cyan))
+  (ivy-modified-buffer                       (:foreground gruvbox-neutral_red))
+  (ivy-virtual                               (:inherit 'font-lock-comment-face))
+  ;; (ivy-action                                (:foreground gruvbox-corrupted-mid_cyan :box 1))
+  ;; (ivy-cursor                                (:foreground gruvbox-corrupted-mid_cyan))
 
   ;; MODE SUPPORT: eyebrowse
   (eyebrowse-mode-line-active               (:foreground gruvbox-faded_purple))
