@@ -462,7 +462,6 @@
   (magit-branch-local                        (:foreground gruvbox-bright_green :background nil :box 1))
   (magit-branch-remote                       (:foreground gruvbox-bright_red :background nil :box 1))
   (magit-tag                                 (:foreground gruvbox-faded_purple :box 1))
-
   (magit-cherry-equivalent                   (:foreground gruvbox-neutral_orange))
   (magit-cherry-unmatched                    (:foreground gruvbox-neutral_purple))
   (magit-diff-context                        (:foreground gruvbox-dark3 :background nil))
@@ -515,7 +514,8 @@
   (magit-log-sha1                            (:foreground gruvbox-bright_orange))
   (magit-process-ng                          (:foreground gruvbox-bright_red :weight 'bold))
   (magit-process-ok                          (:foreground gruvbox-bright_green :weight 'bold))
-  (magit-section-heading                     (:foreground gruvbox-light2 :background gruvbox-dark_blue))
+  (magit-section-heading                     (:foreground gruvbox-muted_cyan)) ;; above added files
+  ;; (magit-section-highlight                   (:foreground gruvbox-light2 :background gruvbox-dark_blue))
   (magit-signature-bad                       (:foreground gruvbox-bright_red :weight 'bold))
   (magit-signature-good                      (:foreground gruvbox-bright_green :weight 'bold))
   (magit-signature-none                      (:foreground gruvbox-faded_red))
