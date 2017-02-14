@@ -475,7 +475,7 @@
   (magit-diff-file-heading                   (:foreground gruvbox-faded_purple))
   (magit-diff-file-heading-highlight         (:foreground gruvbox-faded_purple))
   (magit-diff-file-heading-selection         (:foreground gruvbox-faded_purple))
-  (magit-filename                            (:foreground gruvbox-faded_cyan))
+  (magit-filename                            (:foreground gruvbox-mid_aqua))
   (magit-diff-hunk-header                    (:foreground gruvbox-neutral_aqua))
   (magit-diff-merge-current                  (:background gruvbox-dark_yellow))
   (magit-diff-merge-diff3-separator          (:foreground gruvbox-neutral_orange :weight 'bold))
@@ -541,6 +541,7 @@
   (magit-refname                             (:foreground gruvbox-light2))
   (magit-head                                (:inherit 'magit-branch-local))
   (magit-popup-disabled-argument             (:foreground gruvbox-light4))
+  (git-commit-summary                        (:foreground gruvbox-light2))
 
 
   ;; MODE SUPPORT: dired+
