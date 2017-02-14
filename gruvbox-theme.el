@@ -474,6 +474,11 @@
   (eyebrowse-mode-line-active               (:foreground gruvbox-faded_purple))
   (eyebrowse-mode-line-inactive             (:foreground gruvbox-black))
 
+  ;; MODE SUPPORT: powerline/spaceline
+  (powerline-active1 (:background gruvbox-dark0_hard))
+  (powerline-active2 (:background gruvbox-dark0))
+  (spaceline-evil-normal (:background gruvbox-faded_orange))
+
    ;; web-mode
   (nxml-element-local-name                  (:foreground gruvbox-bright_purple))
   (web-mode-html-tag-face                   (:foreground gruvbox-bright_purple))
