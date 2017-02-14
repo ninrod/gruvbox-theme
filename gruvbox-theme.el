@@ -115,6 +115,8 @@
   (gruvbox-dark_orange     "#613620" "#af5f00")
   (gruvbox-dark_cyan       "#205161" "#005f87")
 
+  (gruvbox-corrupted-dark_purple     "#6f44bf" "#4E3D45")
+
   (gruvbox-muted_red       "#901A1E" "#870000")
   (gruvbox-muted_green     "#556C21" "#878700")
   (gruvbox-muted_yellow    "#A87933" "#af8700")
@@ -177,6 +179,9 @@
   (font-lock-variable-name-face                      (:foreground gruvbox-neutral_blue))
   (font-lock-type-face                               (:foreground gruvbox-neutral_purple))
   (font-lock-warning-face                            (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
+
+  ;; highlight-numbers.el
+  (highlight-numbers-number                  (:foreground gruvbox-corrupted-dark_purple))
 
   ;; whitespace-mode
   (whitespace-space                          (:background gruvbox-bg :foreground gruvbox-dark4))
