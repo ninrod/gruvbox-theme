@@ -477,7 +477,9 @@
   ;; MODE SUPPORT: powerline/spaceline
   (powerline-active1 (:background gruvbox-dark0_hard))
   (powerline-active2 (:background gruvbox-dark0))
-  (spaceline-evil-normal (:background gruvbox-faded_orange))
+  (spaceline-evil-normal (:background gruvbox-delimiter-four))
+  (spaceline-evil-visual (:background gruvbox-corrupted-dark_purple))
+  (spaceline-evil-replace (:background gruvbox-muted_red))
 
    ;; web-mode
   (nxml-element-local-name                  (:foreground gruvbox-bright_purple))
