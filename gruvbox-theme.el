@@ -135,7 +135,8 @@
   (gruvbox-mid_orange      "#603000" "#af5f00")
   (gruvbox-mid_cyan        "#005560" "#005f87")
 
-  (gruvbox-corrupted-mid_cyan "#005f87" "#005f87")
+  (gruvbox-corrupted-mid_cyan  "#005f87" "#005f87")
+  (gruvbox-corrupted-mid_green "#005f00" "#1F321C")
 
   (gruvbox-delimiter-one   "#458588" "#008787")
   (gruvbox-delimiter-two   "#b16286" "#d75f87")
@@ -150,6 +151,8 @@
   (gruvbox-aquamarine4     "#83A598" "#87af87")
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
+  (gruvbox-zerodark-red      "#ff6c6b" "#ff5f5f")
+  (gruvbox-zerodark-bluedark      "#1f5582" "#005f87")
   (gruvbox-spacemacs-keyword      "#4f97d7" "#268bd2")
   (gruvbox-spacemacs-head2        "#2d9574" "#2aa198")
   (gruvbox-spacemacs-comp         "#c56ec3" "#d75fd7")
@@ -163,7 +166,8 @@
  ;; UI
  ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
   (cursor                                    (:background gruvbox-light0))
-  (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box nil))
+  ;; (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box nil))
+  (mode-line                                 (:background gruvbox-dark0 :foreground gruvbox-light2 :box nil))
   (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box nil))
   (fringe                                    (:background gruvbox-bg))
   (linum                                     (:background gruvbox-bg :foreground gruvbox-dark4))
@@ -478,7 +482,8 @@
   ;; MODE SUPPORT: powerline/spaceline
   (powerline-active1 (:background gruvbox-dark0_hard))
   (powerline-active2 (:background gruvbox-dark0))
-  (spaceline-evil-normal (:background gruvbox-delimiter-four))
+  (spaceline-evil-normal (:background gruvbox-zerodark-bluedark))
+  (spaceline-evil-insert (:background gruvbox-corrupted-mid_green))
   (spaceline-evil-visual (:background gruvbox-corrupted-dark_purple))
   (spaceline-evil-replace (:background gruvbox-muted_red))
 
