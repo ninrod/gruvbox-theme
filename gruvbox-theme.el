@@ -610,6 +610,7 @@
    `((t
       (:foreground ,gruvbox-dark_orange
                    :background ,gruvbox-dark1
+                   :foreground ,gruvbox-faded_orange
                    ;; :height 120
                    :inverse-video nil
                    :box (:line-width 6 :color ,gruvbox-dark1 :style nil))))
