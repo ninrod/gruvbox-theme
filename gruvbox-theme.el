@@ -150,6 +150,9 @@
   (gruvbox-aquamarine4     "#83A598" "#87af87")
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
+  (gruvbox-spacemacs-keyword      "#4f97d7" "#268bd2")
+  (gruvbox-spacemacs-comp         "#c56ec3" "#d75fd7")
+
   (gruvbox-bg (cl-case gruvbox-contrast
                 (hard gruvbox-dark0_hard)
                 (soft gruvbox-dark0_soft)
@@ -563,6 +566,16 @@
   (magit-popup-disabled-argument             (:foreground gruvbox-light4))
   (git-commit-summary                        (:foreground gruvbox-light2))
 
+  ;; MODE SUPPORT: standard dired
+  (dired-directory                          (:foreground gruvbox-spacemacs-keyword))
+  (dired-flagged                            (:foreground gruvbox-bright_red))
+  (dired-header                             (:foreground gruvbox-spacemacs-comp :inherit 'bold))
+  (dired-ignored                            (:inherit 'shadow))
+  (dired-mark                               (:foreground gruvbox-spacemacs-comp :inherit 'bold))
+  (dired-marked                             (:foreground gruvbox-bright_purple :inherit 'bold))
+  (dired-perm-write                         (:foreground gruvbox-light3 :underline t))
+  (dired-symlink                            (:foreground gruvbox-faded_cyan :background gruvbox-dark0 :inherit 'bold))
+  (dired-warning                            (:foreground gruvbox-bright_orange))
 
   ;; MODE SUPPORT: dired+
   (diredp-file-name                          (:foreground gruvbox-light2))
