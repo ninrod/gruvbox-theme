@@ -349,6 +349,7 @@
   (message-mml                               (:foreground gruvbox-faded_green :weight 'bold))
 
   ;; org-mode
+  (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark0))
   (org-hide                                  (:foreground gruvbox-dark0))
   (org-level-1                               (:foreground gruvbox-neutral_red))
   (org-level-2                               (:foreground gruvbox-neutral_yellow))
