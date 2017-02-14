@@ -370,7 +370,7 @@
   (org-done                                  (:foreground gruvbox-neutral_aqua :weight 'bold :bold t))
   (org-agenda-done                           (:foreground gruvbox-neutral_aqua))
   (org-headline-done                         (:foreground gruvbox-neutral_aqua))
-  (org-table                                 (:foreground gruvbox-neutral_blue))
+  (org-table                                 (:foreground gruvbox-neutral_blue :background gruvbox-dark0))
   (org-formula                               (:foreground gruvbox-neutral_yellow))
   (org-document-title                        (:foreground gruvbox-faded_blue))
   (org-document-info                         (:foreground gruvbox-faded_blue))
