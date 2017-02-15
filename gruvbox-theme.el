@@ -149,6 +149,7 @@
   (gruvbox-aquamarine4     "#83A598" "#87af87")
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
+  (gruvbox-zerodark-orange-light  "#d7af87" "#ddbd78")
   (gruvbox-zerodark-red           "#ff6c6b" "#ff5f5f")
   (gruvbox-zerodark-bluedark      "#1f5582" "#005f87")
   (gruvbox-zerodark-spring-green  "#00cd66" "green")
@@ -156,7 +157,6 @@
   (gruvbox-spacemacs-head2        "#2d9574" "#2aa198")
   (gruvbox-spacemacs-comp         "#d75fd7" "#c56ec3")
   (gruvbox-corrupted-dark_purple  "#6f44bf" "#4E3D45")
-
 
   (gruvbox-bg (cl-case gruvbox-contrast
                 (hard gruvbox-dark0_hard)
@@ -375,7 +375,7 @@
   (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
   (org-warning                               (:foreground gruvbox-neutral_red :weight 'bold :underline nil :bold t))
   (org-archived                              (:foreground gruvbox-light0 :weight 'bold))
-  (org-link                                  (:foreground gruvbox-faded_aqua :underline t))
+  (org-link                                  (:foreground gruvbox-zerodark-orange-light :underline t))
   (org-footnote                              (:foreground gruvbox-neutral_aqua :underline t))
   (org-ellipsis                              (:foreground gruvbox-light4 :underline t))
   (org-date                                  (:foreground gruvbox-neutral_blue :underline t))
