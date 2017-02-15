@@ -115,8 +115,6 @@
   (gruvbox-dark_orange     "#613620" "#af5f00")
   (gruvbox-dark_cyan       "#205161" "#005f87")
 
-  (gruvbox-corrupted-dark_purple     "#6f44bf" "#4E3D45")
-
   (gruvbox-muted_red       "#901A1E" "#870000")
   (gruvbox-muted_green     "#556C21" "#878700")
   (gruvbox-muted_yellow    "#A87933" "#af8700")
@@ -151,11 +149,14 @@
   (gruvbox-aquamarine4     "#83A598" "#87af87")
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
-  (gruvbox-zerodark-red      "#ff6c6b" "#ff5f5f")
+  (gruvbox-zerodark-red           "#ff6c6b" "#ff5f5f")
   (gruvbox-zerodark-bluedark      "#1f5582" "#005f87")
+  (gruvbox-zerodark-spring-green  "#00cd66" "green")
   (gruvbox-spacemacs-keyword      "#4f97d7" "#268bd2")
   (gruvbox-spacemacs-head2        "#2d9574" "#2aa198")
-  (gruvbox-spacemacs-comp         "#c56ec3" "#d75fd7")
+  (gruvbox-spacemacs-comp         "#d75fd7" "#c56ec3")
+  (gruvbox-corrupted-dark_purple  "#6f44bf" "#4E3D45")
+
 
   (gruvbox-bg (cl-case gruvbox-contrast
                 (hard gruvbox-dark0_hard)
@@ -190,7 +191,7 @@
   (font-lock-warning-face                            (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
 
   ;; highlight-numbers.el
-  (highlight-numbers-number                  (:foreground gruvbox-corrupted-dark_purple))
+  (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
 
   ;; whitespace-mode
   (whitespace-space                          (:background gruvbox-bg :foreground gruvbox-dark4))
@@ -360,12 +361,12 @@
   ;; org-mode
   (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark0))
   (org-hide                                  (:foreground gruvbox-dark0))
-  (org-level-1                               (:foreground gruvbox-neutral_orange))
-  (org-level-2                               (:foreground gruvbox-spacemacs-keyword))
+  (org-level-1                               (:foreground gruvbox-spacemacs-keyword))
+  (org-level-2                               (:foreground gruvbox-neutral_orange))
   (org-level-3                               (:foreground gruvbox-spacemacs-head2))
   (org-level-4                               (:foreground gruvbox-neutral_purple))
-  (org-level-5                               (:foreground gruvbox-neutral_orange))
-  (org-level-6                               (:foreground gruvbox-spacemacs-keyword))
+  (org-level-5                               (:foreground gruvbox-spacemacs-keyword))
+  (org-level-6                               (:foreground gruvbox-neutral_orange))
   (org-level-7                               (:foreground gruvbox-spacemacs-head2))
   (org-level-8                               (:foreground gruvbox-neutral_purple))
   (org-special-keyword                       (:inherit 'font-lock-comment-face))
@@ -385,7 +386,7 @@
   (org-done                                  (:foreground gruvbox-neutral_aqua :weight 'bold :bold t))
   (org-agenda-done                           (:foreground gruvbox-neutral_aqua))
   (org-headline-done                         (:foreground gruvbox-neutral_aqua))
-  (org-table                                 (:foreground gruvbox-neutral_red :background gruvbox-dark0))
+  (org-table                                 (:foreground gruvbox-bright_aqua :background gruvbox-dark0))
   (org-formula                               (:foreground gruvbox-neutral_yellow))
   (org-document-title                        (:foreground gruvbox-faded_blue))
   (org-document-info                         (:foreground gruvbox-faded_blue))
