@@ -153,6 +153,7 @@
   (gruvbox-zerodark-red           "#ff6c6b" "#ff5f5f")
   (gruvbox-zerodark-bluedark      "#1f5582" "#005f87")
   (gruvbox-zerodark-spring-green  "#00cd66" "green")
+  (gruvbox-zerodark-cyan  "#28def0" "#00ffff")
   (gruvbox-spacemacs-keyword      "#4f97d7" "#268bd2")
   (gruvbox-spacemacs-head2        "#2d9574" "#2aa198")
   (gruvbox-spacemacs-comp         "#d75fd7" "#c56ec3")
@@ -165,7 +166,7 @@
                 (t    gruvbox-dark0))))
 
  ;; UI
- ((default                                   (:background gruvbox-bg :foreground gruvbox-light1))
+ ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
   (cursor                                    (:background gruvbox-light0))
   (mode-line                                 (:background gruvbox-dark0 :foreground gruvbox-light2 :box nil))
   (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box nil))
@@ -375,7 +376,7 @@
   (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
   (org-warning                               (:foreground gruvbox-neutral_red :weight 'bold :underline nil :bold t))
   (org-archived                              (:foreground gruvbox-light0 :weight 'bold))
-  (org-link                                  (:foreground gruvbox-zerodark-orange-light :underline t))
+  (org-link                                  (:foreground gruvbox-zerodark-cyan :underline t))
   (org-footnote                              (:foreground gruvbox-neutral_aqua :underline t))
   (org-ellipsis                              (:foreground gruvbox-light4 :underline t))
   (org-date                                  (:foreground gruvbox-neutral_blue :underline t))
