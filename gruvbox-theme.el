@@ -164,7 +164,7 @@
                 (t    gruvbox-dark0))))
 
  ;; UI
- ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
+ ((default                                   (:background gruvbox-bg :foreground gruvbox-light1))
   (cursor                                    (:background gruvbox-light0))
   ;; (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box nil))
   (mode-line                                 (:background gruvbox-dark0 :foreground gruvbox-light2 :box nil))
