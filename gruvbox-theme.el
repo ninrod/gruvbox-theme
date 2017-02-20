@@ -149,15 +149,15 @@
   (gruvbox-aquamarine4     "#83A598" "#87af87")
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
-  (gruvbox-zerodark-orange-light  "#d7af87" "#ddbd78")
-  (gruvbox-zerodark-red           "#ff6c6b" "#ff5f5f")
-  (gruvbox-zerodark-bluedark      "#1f5582" "#005f87")
-  (gruvbox-zerodark-spring-green  "#00cd66" "green")
-  (gruvbox-zerodark-cyan  "#28def0" "#00ffff")
-  (gruvbox-spacemacs-keyword      "#4f97d7" "#268bd2")
-  (gruvbox-spacemacs-head2        "#2d9574" "#2aa198")
-  (gruvbox-spacemacs-comp         "#d75fd7" "#c56ec3")
-  (gruvbox-corrupted-dark_purple  "#6f44bf" "#4E3D45")
+ (gruvbox-zerodark-orange-light "#d7af87" "#ddbd78")
+ (gruvbox-zerodark-red          "#ff6c6b" "#ff5f5f")
+ (gruvbox-zerodark-bluedark     "#1f5582" "#005f87")
+ (gruvbox-zerodark-spring-green "#00cd66" "green")
+ (gruvbox-zerodark-cyan         "#28def0" "#00ffff")
+ (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2")
+ (gruvbox-spacemacs-head2       "#2d9574" "#2aa198")
+ (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
+ (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
 
   (gruvbox-bg (cl-case gruvbox-contrast
                 (hard gruvbox-dark0_hard)
@@ -360,6 +360,7 @@
   (message-mml                               (:foreground gruvbox-faded_green :weight 'bold))
 
   ;; org-mode
+  (org-meta-line                             (:foreground gruvbox-zerodark-orange-light :slant 'italic))
   (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark0))
   (org-hide                                  (:foreground gruvbox-dark0))
   (org-level-1                               (:foreground gruvbox-spacemacs-keyword))
@@ -463,12 +464,12 @@
 
   ;; MODE SUPPORT: ivy
   (ivy-confirm-face                          (:foreground gruvbox-bright_green))
-  (ivy-current-match                         (:foreground gruvbox-light0 :background gruvbox-faded_blue))
+  (ivy-current-match                         (:background gruvbox-dark1 :inherit 'bold))
   (ivy-match-required-face                   (:foreground gruvbox-bright_red))
-  (ivy-minibuffer-match-face-1               (:background gruvbox-dark1))
-  (ivy-minibuffer-match-face-2               (:background gruvbox-dark2))
-  (ivy-minibuffer-match-face-3               (:background gruvbox-faded_aqua))
-  (ivy-minibuffer-match-face-4               (:background gruvbox-faded_purple))
+  (ivy-minibuffer-match-face-1               (:inherit 'bold))
+  (ivy-minibuffer-match-face-2               (:foreground gruvbox-faded_blue :underline t))
+  (ivy-minibuffer-match-face-3               (:foreground gruvbox-faded_aqua :underline t))
+  (ivy-minibuffer-match-face-4               (:foreground gruvbox-faded_purple :underline t))
   (ivy-remote                                (:foreground gruvbox-neutral_blue))
   (ivy-subdir                                (:foreground gruvbox-corrupted-mid_cyan))
   (ivy-modified-buffer                       (:foreground gruvbox-neutral_red))
