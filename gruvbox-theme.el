@@ -467,7 +467,7 @@
   (ivy-current-match                         (:background gruvbox-dark1 :inherit 'bold))
   (ivy-match-required-face                   (:foreground gruvbox-bright_red))
   (ivy-minibuffer-match-face-1               (:inherit 'bold))
-  (ivy-minibuffer-match-face-2               (:foreground gruvbox-faded_blue :underline t))
+  (ivy-minibuffer-match-face-2               (:foreground gruvbox-zerodark-spring-green :underline t))
   (ivy-minibuffer-match-face-3               (:foreground gruvbox-faded_aqua :underline t))
   (ivy-minibuffer-match-face-4               (:foreground gruvbox-faded_purple :underline t))
   (ivy-remote                                (:foreground gruvbox-neutral_blue))
