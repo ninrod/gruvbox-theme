@@ -157,6 +157,7 @@
  (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2")
  (gruvbox-spacemacs-head2       "#2d9574" "#2aa198")
  (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
+ (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f")
  (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
 
   (gruvbox-bg (cl-case gruvbox-contrast
@@ -230,7 +231,7 @@
 
   ;; Smartparens
   (sp-pair-overlay-face                      (:background gruvbox-dark2))
-  (sp-show-pair-match-face                   (:background gruvbox-dark2)) ;; Pair tags highlight
+  (sp-show-pair-match-face                   (:foreground gruvbox-spacemacs-mat :inherit 'bold :underline t))
   (sp-show-pair-mismatch-face                (:background gruvbox-neutral_red)) ;; Highlight for bracket without pair
   ;;(sp-wrap-overlay-face                     (:inherit 'sp-wrap-overlay-face))
   ;;(sp-wrap-tag-overlay-face                 (:inherit 'sp-wrap-overlay-face))
