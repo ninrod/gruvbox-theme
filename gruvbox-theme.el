@@ -471,7 +471,7 @@
   (ivy-minibuffer-match-face-3               (:foreground gruvbox-zerodark-cyan :underline t))
   (ivy-minibuffer-match-face-4               (:foreground gruvbox-spacemacs-comp :underline t))
   (ivy-remote                                (:foreground gruvbox-neutral_blue))
-  (ivy-subdir                                (:foreground gruvbox-corrupted-mid_cyan))
+  (ivy-subdir                                (:foreground gruvbox-spacemacs-keyword))
   (ivy-modified-buffer                       (:foreground gruvbox-neutral_red))
   (ivy-virtual                               (:inherit 'font-lock-comment-face))
   ;; (ivy-action                                (:foreground gruvbox-corrupted-mid_cyan :box 1))
