@@ -386,7 +386,7 @@
   (org-tag                                   (:bold t :weight 'bold))
   (org-list-dt                               (:bold t :weight 'bold))
   (org-todo                                  (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
-  (org-done                                  (:foreground gruvbox-neutral_aqua :weight 'bold :bold t))
+  (org-done                                  (:foreground gruvbox-neutral_aqua :background gruvbox-dark_aqua :weight 'bold :bold t))
   (org-agenda-done                           (:foreground gruvbox-neutral_aqua))
   (org-headline-done                         (:foreground gruvbox-neutral_aqua))
   (org-table                                 (:foreground gruvbox-bright_aqua :background gruvbox-dark0))
@@ -477,6 +477,9 @@
   (ivy-virtual                               (:inherit 'font-lock-comment-face))
   ;; (ivy-action                                (:foreground gruvbox-corrupted-mid_cyan :box 1))
   ;; (ivy-cursor                                (:foreground gruvbox-corrupted-mid_cyan))
+
+  ;; support vim-empty-lines
+  (vim-empty-lines-face                               (:foreground gruvbox-dark2))
 
   ;; MODE SUPPORT: eyebrowse
   (eyebrowse-mode-line-active               (:foreground gruvbox-faded_purple))
