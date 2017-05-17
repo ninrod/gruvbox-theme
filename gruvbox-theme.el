@@ -149,16 +149,27 @@
   (gruvbox-aquamarine4     "#83A598" "#87af87")
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
- (gruvbox-zerodark-orange-light "#d7af87" "#ddbd78")
- (gruvbox-zerodark-red          "#ff6c6b" "#ff5f5f")
- (gruvbox-zerodark-bluedark     "#1f5582" "#005f87")
- (gruvbox-zerodark-spring-green "#00cd66" "green")
- (gruvbox-zerodark-cyan         "#28def0" "#00ffff")
- (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2")
- (gruvbox-spacemacs-head2       "#2d9574" "#2aa198")
- (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
- (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f")
- (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
+  (gruvbox-zerodark-orange-light "#d7af87" "#ddbd78")
+  (gruvbox-zerodark-red          "#ff6c6b" "#ff5f5f")
+  (gruvbox-zerodark-bluedark     "#1f5582" "#005f87")
+  (gruvbox-zerodark-spring-green "#00cd66" "green")
+  (gruvbox-zerodark-cyan         "#28def0" "#00ffff")
+
+  (diff-added-background            "#284437" "#284437")
+  (diff-added-refined-background    "#1e8967" "#1e8967")
+  (diff-removed-background          "#583333" "#580000")
+  (diff-removed-refined-background  "#b33c49" "#b33c49")
+  (diff-current-background          "#29457b" "#29457b")
+  (diff-current-refined-background  "#4174ae" "#4174ae")
+  (background-blue                  "#38394c" "#444444")
+  (bright-background-blue           "#4e5079" "#4e5079")
+  (blue                             "#61afef" "#5fafff")
+
+  (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2")
+  (gruvbox-spacemacs-head2       "#2d9574" "#2aa198")
+  (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
+  (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f")
+  (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
 
   (gruvbox-bg (cl-case gruvbox-contrast
                 (hard gruvbox-dark0_hard)
@@ -497,6 +508,14 @@
   (nxml-element-local-name                  (:foreground gruvbox-bright_purple))
   (web-mode-html-tag-face                   (:foreground gruvbox-bright_purple))
   (web-mode-symbol-face                     (:foreground gruvbox-faded_red))
+
+  ;; ediff
+  (ediff-fine-diff-B          (:inherit 'diff-refine-added))
+  (ediff-current-diff-B       (:inherit 'diff-added))
+  (ediff-fine-diff-A          (:inherit 'diff-refine-removed))
+  (ediff-current-diff-A       (:inherit 'diff-removed))
+  (ediff-fine-diff-C          (:foreground blue :background bright-background-blue))
+  (ediff-current-diff-C       (:background background-blue :foreground blue))
 
   ;; MODE SUPPORT: magit
   (magit-branch                              (:foreground gruvbox-turquoise4 :background nil :box 1))
