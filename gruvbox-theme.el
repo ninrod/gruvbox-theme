@@ -488,6 +488,7 @@
   (ivy-subdir                                (:foreground gruvbox-spacemacs-keyword))
   (ivy-modified-buffer                       (:foreground gruvbox-neutral_red))
   (ivy-virtual                               (:inherit 'font-lock-comment-face))
+  (ivy-highlight-face                        (:foreground gruvbox-neutral_blue :underline t))
   ;; (ivy-action                                (:foreground gruvbox-corrupted-mid_cyan :box 1))
   ;; (ivy-cursor                                (:foreground gruvbox-corrupted-mid_cyan))
 
