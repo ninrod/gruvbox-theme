@@ -170,6 +170,7 @@
   (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2")
   (gruvbox-spacemacs-head2       "#2d9574" "#2aa198")
   (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
+  (gruvbox-spacemacs-comment     "#2aa1ae" "#008787")
   (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f")
   (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
 
@@ -267,9 +268,10 @@
   (diff-indicator-added                      (:inherit 'diff-added))
   (diff-indicator-removed                    (:inherit 'diff-removed))
 
+  ;; js2-mode
   (js2-warning                               (:underline (:color gruvbox-bright_yellow :style 'wave)))
   (js2-error                                 (:underline (:color gruvbox-bright_red :style 'wave)))
-  (js2-external-variable                     (:foreground gruvbox-faded_red))
+  (js2-external-variable                     (:foreground gruvbox-spacemacs-comment))
   (js2-object-property                       (:foreground gruvbox-muted_purple))
   (js2-jsdoc-tag                             (:background nil :foreground gruvbox-gray  ))
   (js2-jsdoc-type                            (:background nil :foreground gruvbox-light4))
