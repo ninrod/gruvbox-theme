@@ -334,6 +334,11 @@
   (helm-source-header                        (:foreground gruvbox-light2))
   (helm-visible-mark                         (:foreground gruvbox-black :background gruvbox-light3))
 
+  ;; MODE SUPPORT: line numbers and relative line numbers
+  (line-number              (:foreground gruvbox-bright_blue :background blue-bg))
+  (line-number-current-line (:foreground gruvbox-bright_red :background red-bg-s))
+
+
   ;; MODE SUPPORT: company (ported over from darktooth)
   (company-echo                              (:inherit 'company-echo-common))
   (company-echo-common                       (:foreground gruvbox-bright_blue :background nil))
@@ -644,7 +649,6 @@
   (diredp-other-priv                         (:foreground gruvbox-dark2))
   (diredp-rare-priv                          (:foreground gruvbox-dark4))
   (diredp-ignored-file-name                  (:foreground gruvbox-dark4))
-
   (diredp-dir-priv                           (:foreground gruvbox-faded_blue  :background gruvbox-dark_blue))
   (diredp-exec-priv                          (:foreground gruvbox-faded_blue  :background gruvbox-dark_blue))
   (diredp-link-priv                          (:foreground gruvbox-faded_aqua  :background gruvbox-dark_aqua))
