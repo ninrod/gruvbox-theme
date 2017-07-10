@@ -335,10 +335,10 @@
   (helm-visible-mark                         (:foreground gruvbox-black :background gruvbox-light3))
 
   ;; MODE SUPPORT: line numbers and relative line numbers
-  (line-number              (:foreground gruvbox-bright_blue :background blue-bg))
-  (line-number-current-line (:foreground gruvbox-bright_red :background red-bg-s))
-
-
+  ;; (line-number              (:foreground gruvbox-bright_blue :background blue-bg))
+  (line-number              (:inherit font-lock-comment-face))
+  (line-number-current-line (:foreground gruvbox-faded_yellow))
+  
   ;; MODE SUPPORT: company (ported over from darktooth)
   (company-echo                              (:inherit 'company-echo-common))
   (company-echo-common                       (:foreground gruvbox-bright_blue :background nil))
