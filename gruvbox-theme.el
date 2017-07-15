@@ -264,6 +264,8 @@
   (diff-changed                              (:background nil :foreground gruvbox-light1))
   (diff-added                                (:background nil :foreground gruvbox-neutral_green))
   (diff-removed                              (:background nil :foreground gruvbox-neutral_red))
+  (diff-refine-added                         (:foreground gruvbox-bright_green :background gruvbox-muted_green))
+  (diff-refine-removed                       (:foreground gruvbox-bright_red :background gruvbox-muted_red))
   (diff-indicator-changed                    (:inherit 'diff-changed))
   (diff-indicator-added                      (:inherit 'diff-added))
   (diff-indicator-removed                    (:inherit 'diff-removed))
