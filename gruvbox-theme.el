@@ -554,8 +554,6 @@
   (magit-diff-added-highlight                (:foreground gruvbox-bright_green :background gruvbox-mid_green))
   (magit-diff-removed                        (:foreground gruvbox-bright_red :background gruvbox-mid_red))
   (magit-diff-removed-highlight              (:foreground gruvbox-bright_red :background gruvbox-mid_red))
-  (magit-diff-add                            (:foreground gruvbox-bright_green))
-  (magit-diff-del                            (:foreground gruvbox-bright_red))
   (magit-diff-file-heading                   (:foreground gruvbox-faded_purple))
   (magit-diff-file-heading-highlight         (:foreground gruvbox-faded_purple))
   (magit-diff-file-heading-selection         (:foreground gruvbox-faded_purple))
