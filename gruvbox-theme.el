@@ -63,6 +63,7 @@
  ((((class color) (min-colors #xFFFFFF))        ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))           ; col 2 Xterm/256
 
+  (gruvbox-dark0_ultimate  "#111314" "#0F0F0F")
   (gruvbox-dark0_hard      "#1d2021" "#1c1c1c")
   (gruvbox-dark0           "#282828" "#262626")
   (gruvbox-dark0_soft      "#32302f" "#303030")
@@ -150,7 +151,7 @@
   (gruvbox-turquoise4      "#61ACBB" "#5fafaf")
 
   (gruvbox-zerodark-orange-light "#d7af87" "#ddbd78")
-  (gruvbox-zerodark-red          "#ff6c6b" "#ff5f5f")
+  (gruvbox-zerodark-red          "#ff5f5f" "#ff6c6b")
   (gruvbox-zerodark-bluedark     "#1f5582" "#005f87")
   (gruvbox-zerodark-spring-green "#00cd66" "green")
   (gruvbox-zerodark-cyan         "#28def0" "#00ffff")
@@ -247,8 +248,8 @@
   (sp-pair-overlay-face                      (:background gruvbox-dark2))
   (sp-show-pair-match-face                   (:foreground gruvbox-spacemacs-mat :inherit 'bold :underline t))
   (sp-show-pair-mismatch-face                (:background gruvbox-neutral_red)) ;; Highlight for bracket without pair
-  ;;(sp-wrap-overlay-face                     (:inherit 'sp-wrap-overlay-face))
-  ;;(sp-wrap-tag-overlay-face                 (:inherit 'sp-wrap-overlay-face))
+  (sp-wrap-overlay-face                      (:inherit 'sp-wrap-overlay-face))
+  (sp-wrap-tag-overlay-face                (:inherit 'sp-wrap-overlay-face))
 
   ;; elscreen
   (elscreen-tab-background-face              (:background gruvbox-bg :box nil)) ;; Tab bar, not the tabs
@@ -336,8 +337,8 @@
   (helm-source-header                        (:foreground gruvbox-light2))
   (helm-visible-mark                         (:foreground gruvbox-black :background gruvbox-light3))
 
+  
   ;; MODE SUPPORT: line numbers and visual relative line numbers
-  ;; (line-number              (:foreground gruvbox-bright_blue :background blue-bg))
   (line-number              (:foreground gruvbox-dark2 :background gruvbox-dark0))
   (line-number-current-line (:foreground gruvbox-faded_yellow :background gruvbox-dark0_soft))
 
@@ -384,7 +385,7 @@
 
   ;; org-mode
   (org-meta-line                             (:foreground gruvbox-zerodark-orange-light :slant 'italic))
-  (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark0))
+  (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark0_ultimate))
   (org-hide                                  (:foreground gruvbox-dark0))
   (org-level-1                               (:foreground gruvbox-spacemacs-keyword))
   (org-level-2                               (:foreground gruvbox-spacemacs-head2))
@@ -501,7 +502,13 @@
   ;; (ivy-action                                (:foreground gruvbox-corrupted-mid_cyan :box 1))
   ;; (ivy-cursor                                (:foreground gruvbox-corrupted-mid_cyan))
 
-  ;; support vim-empty-lines
+  ;; MODE SUPPORT: avy
+  (avy-lead-face   (:foreground gruvbox-zerodark-red         :background gruvbox-dark2 :inherit 'bold))
+  (avy-lead-face-0 (:foreground gruvbox-zerodark-spring-green :background gruvbox-dark2 :inherit 'bold))
+  (avy-lead-face-2 (:foreground gruvbox-zerodark-cyan         :background gruvbox-dark2 :inherit 'bold))
+  (avy-lead-face-1 (:foreground gruvbox-bright_orange            :background gruvbox-dark2 :inherit 'bold))
+
+  ;; MODE SUPPORT: vim-empty-lines
   (vim-empty-lines-face                               (:foreground gruvbox-dark2))
 
   ;; MODE SUPPORT: eyebrowse
@@ -516,7 +523,7 @@
   (spaceline-evil-visual (:background gruvbox-corrupted-dark_purple))
   (spaceline-evil-replace (:background gruvbox-muted_red))
 
-   ;; web-mode
+  ;; web-mode
   (nxml-element-local-name                  (:foreground gruvbox-bright_purple))
   (web-mode-html-tag-face                   (:foreground gruvbox-bright_purple))
   (web-mode-symbol-face                     (:foreground gruvbox-faded_red))
