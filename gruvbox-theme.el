@@ -338,7 +338,10 @@
   (helm-source-header                        (:foreground gruvbox-light2))
   (helm-visible-mark                         (:foreground gruvbox-black :background gruvbox-light3))
 
-  
+  ;; mode support: sh-mode
+  (sh-quoted-exec (:foreground gruvbox-bright_purple))
+  (sh-heredoc     (:foreground gruvbox-bright_orange))
+
   ;; MODE SUPPORT: line numbers and visual relative line numbers
   (line-number              (:foreground gruvbox-dark2 :background gruvbox-dark0))
   (line-number-current-line (:foreground gruvbox-faded_yellow :background gruvbox-dark0_soft))
