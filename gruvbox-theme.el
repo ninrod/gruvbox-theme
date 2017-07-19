@@ -3,12 +3,13 @@
 ;; Copyright (c) 2013 Lee Machin
 ;; Copyright (c) 2013-2016 Greduan
 ;; Copyright (c) 2016-2017 Jason Milkins
+;; Copyright (c) 2017-2018 Filipe Silva (ninrod)
 
-;; Author: Jason Milkins <jasonm23@gmail.com>
-;; (current maintainer)
+;; Author: Filipe Silva <filipe.silva at gmail dot com> (current maintainer)
 ;;
 ;; Author-list: Lee Machin <ljmachin@gmail.com>,
 ;;              Greduan <me@greduan.com>
+;;              jason Milkins <jasonm23@gmail.com>
 ;;
 ;; URL: http://github.com/Greduan/emacs-theme-gruvbox
 ;; Version: 1.12.0
