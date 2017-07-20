@@ -660,7 +660,7 @@
   (info-title-2        (:height 1.4 :inherit 'bold))
   (info-title-3        (:height 1.3))
   (info-title-4        (:height 1.2))
-  (info-xref           (:inherit 'bold))
+  (info-xref           (:inherit 'org-link))
 
   ;; MODE SUPPORT: dired+
   (diredp-file-name                          (:foreground gruvbox-light2))
