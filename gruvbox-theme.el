@@ -169,11 +169,12 @@
   (bg3           "#100a14" "#121212")
   (bg4           "#0a0814" "#080808")
 
-  (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2")
-  (gruvbox-spacemacs-head2       "#2d9574" "#2aa198")
+  (gruvbox-spacemacs-func        "#bc6ec5" "#d75fd7") ;func
+  (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f") ;suc
+  (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2") ;keyword
+  (gruvbox-spacemacs-head2       "#2d9574" "#2aa198") ;str
   (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
   (gruvbox-spacemacs-comment     "#2aa1ae" "#008787")
-  (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f")
   (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
 
   (gruvbox-bg (cl-case gruvbox-contrast
@@ -208,7 +209,8 @@
   (font-lock-type-face                               (:foreground gruvbox-neutral_purple))
   (font-lock-warning-face                            (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
 
-  ;; highlight-numbers.el
+  
+  ;; MODE SUPPORT: highlight-numbers.el
   (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
 
   ;; whitespace-mode
@@ -647,6 +649,19 @@
   (dired-symlink                            (:foreground gruvbox-faded_cyan :background gruvbox-dark0 :inherit 'bold))
   (dired-warning                            (:foreground gruvbox-bright_orange))
 
+  ;; MODE SUPPORT: info
+  (info-header-xref    (:foreground gruvbox-spacemacs-func :underline t))
+  (info-menu           (:foreground gruvbox-spacemacs-mat))
+  (info-node           (:foreground gruvbox-spacemacs-func :inherit bold))
+  (info-quoted-name    (:foreground gruvbox-spacemacs-keyword))
+  (info-string         (:foreground gruvbox-spacemacs-head2))
+  (info-reference-item (:background nil :underline t :inherit bold))
+  (info-title-1        (:height 1.5 :inherit bold))
+  (info-title-2        (:height 1.4 :inherit bold))
+  (info-title-3        (:height 1.3))
+  (info-title-4        (:height 1.2))
+  (info-xref           (:inherit 'bold))
+
   ;; MODE SUPPORT: dired+
   (diredp-file-name                          (:foreground gruvbox-light2))
   (diredp-file-suffix                        (:foreground gruvbox-light4))
@@ -664,7 +679,10 @@
   (diredp-exec-priv                          (:foreground gruvbox-faded_blue  :background gruvbox-dark_blue))
   (diredp-link-priv                          (:foreground gruvbox-faded_aqua  :background gruvbox-dark_aqua))
   (diredp-read-priv                          (:foreground gruvbox-bright_red  :background gruvbox-dark_red))
-  (diredp-write-priv                         (:foreground gruvbox-bright_aqua :background gruvbox-dark_aqua)))
+  (diredp-write-priv                         (:foreground gruvbox-bright_aqua :background gruvbox-dark_aqua))
+
+  )
+
 
  (defface gruvbox-modeline-three-active
    `((t
