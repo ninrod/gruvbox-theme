@@ -173,6 +173,7 @@
   (gruvbox-spacemacs-mat         "#86dc2f" "#86dc2f") ;suc
   (gruvbox-spacemacs-keyword     "#4f97d7" "#268bd2") ;keyword
   (gruvbox-spacemacs-head2       "#2d9574" "#2aa198") ;str
+  (gruvbox-spacemacs-var         "#7590db" "#8787d7") ;var
   (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
   (gruvbox-spacemacs-comment     "#2aa1ae" "#008787")
   (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
@@ -209,9 +210,13 @@
   (font-lock-type-face                               (:foreground gruvbox-neutral_purple))
   (font-lock-warning-face                            (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
 
-  
   ;; MODE SUPPORT: highlight-numbers.el
   (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
+
+  ;; MODE SUPPORT: highlight-quoted.el
+  ;; (highlight-quoted-symbol (:foreground gruvbox-corrupted-dark_purple :inherit 'italic))
+  (highlight-quoted-symbol (:foreground gruvbox-spacemacs-var :inherit 'italic))
+  (highlight-quoted-quote  (:foreground gruvbox-spacemacs-comp :inherit 'bold))
 
   ;; whitespace-mode
   (whitespace-space                          (:background gruvbox-bg :foreground gruvbox-dark4))
