@@ -213,6 +213,9 @@
   ;; MODE SUPPORT: highlight-numbers.el
   (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
 
+  ;; MODE SUPPORT: fic-mode
+  (fic-face                                  (:inherit 'font-lock-warning-face))
+
   ;; MODE SUPPORT: highlight-quoted.el
   ;; (highlight-quoted-symbol (:foreground gruvbox-corrupted-dark_purple :inherit 'italic))
   (highlight-quoted-symbol (:foreground gruvbox-spacemacs-var :inherit 'italic))
