@@ -213,21 +213,21 @@
   ;; MODE SUPPORT: highlight-numbers.el
   (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
 
-  ;; MODE SUPPORT: highlight-defined.el
-  (highlight-defined-function-name-face         (:inherit 'font-lock-function-name-face :underline t :weight 'bold :slant 'italic))
-  (highlight-defined-variable-name-face         (:inherit 'font-lock-variable-name-face :weight 'bold :slant 'italic))
-  (highlight-defined-macro-name-face            (:foreground gruvbox-neutral_red) :weight 'bold :slant 'italic)
-  (highlight-defined-builtin-function-name-face (:foreground gruvbox-neutral_blue :underline t :weight 'bold :slant 'italic))
-  (highlight-defined-special-form-name-face     (:foreground gruvbox-spacemacs-mat :weight 'bold :slant 'italic))
-  (highlight-defined-face-name-face             (:foreground gruvbox-neutral_purple :weight 'bold :slant 'italic))
+  ;; MODE SUPPORT                                : highlight-defined.el
+  (highlight-defined-builtin-function-name-face (:foreground gruvbox-spacemacs-func                      :weight 'bold :slant 'italic))
+  (highlight-defined-function-name-face         (:inherit 'font-lock-function-name-face                  :weight 'bold               ))
+  (highlight-defined-variable-name-face         (:foreground gruvbox-spacemacs-var                       :weight 'bold               ))
+  (highlight-defined-special-form-name-face     (:foreground gruvbox-spacemacs-mat         :underline t  :weight 'bold :slant 'italic))
+  (highlight-defined-face-name-face             (:foreground gruvbox-neutral_purple        :underline t  :weight 'bold :slant 'italic))
+  ;; (highlight-defined-macro-name-face            (:foreground gruvbox-corrupted-dark_purple               :weight 'bold :slant 'italic))
 
   ;; MODE SUPPORT: fic-mode
   (fic-face                                  (:inherit 'font-lock-warning-face))
 
   ;; MODE SUPPORT: highlight-quoted.el
   ;; (highlight-quoted-symbol (:foreground gruvbox-corrupted-dark_purple :inherit 'italic))
-  (highlight-quoted-symbol (:foreground gruvbox-spacemacs-var :inherit 'italic))
-  (highlight-quoted-quote  (:foreground gruvbox-spacemacs-comp :inherit 'bold))
+  (highlight-quoted-symbol (:foreground gruvbox-spacemacs-var         :slant 'italic))
+  (highlight-quoted-quote  (:foreground gruvbox-zerodark-spring-green :weight 'bold))
 
   ;; whitespace-mode
   (whitespace-space                          (:background gruvbox-bg :foreground gruvbox-dark4))
