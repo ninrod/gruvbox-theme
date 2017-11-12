@@ -213,6 +213,14 @@
   ;; MODE SUPPORT: highlight-numbers.el
   (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
 
+  ;; MODE SUPPORT: highlight-defined.el
+  (highlight-defined-function-name-face         (:inherit 'font-lock-function-name-face :underline t :weight 'bold :slant 'italic))
+  ;; (highlight-defined-variable-name-face         (:foreground gruvbox-spacemacs-comp))
+  ;; (highlight-defined-special-form-name-face     (:foreground gruvbox-spacemacs-comp))
+  ;; (highlight-defined-builtin-function-name-face (:foreground gruvbox-spacemacs-comp))
+  ;; (highlight-defined-macro-name-face            (:foreground gruvbox-spacemacs-comp))
+  ;; (highlight-defined-face-name-face             (:foreground gruvbox-spacemacs-comp))
+
   ;; MODE SUPPORT: fic-mode
   (fic-face                                  (:inherit 'font-lock-warning-face))
 
