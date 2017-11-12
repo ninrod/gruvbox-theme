@@ -215,11 +215,11 @@
 
   ;; MODE SUPPORT: highlight-defined.el
   (highlight-defined-function-name-face         (:inherit 'font-lock-function-name-face :underline t :weight 'bold :slant 'italic))
-  ;; (highlight-defined-variable-name-face         (:foreground gruvbox-spacemacs-comp))
-  ;; (highlight-defined-special-form-name-face     (:foreground gruvbox-spacemacs-comp))
-  ;; (highlight-defined-builtin-function-name-face (:foreground gruvbox-spacemacs-comp))
-  ;; (highlight-defined-macro-name-face            (:foreground gruvbox-spacemacs-comp))
-  ;; (highlight-defined-face-name-face             (:foreground gruvbox-spacemacs-comp))
+  (highlight-defined-variable-name-face         (:inherit 'font-lock-variable-name-face :weight 'bold :slant 'italic))
+  (highlight-defined-macro-name-face            (:foreground gruvbox-neutral_red) :weight 'bold :slant 'italic)
+  (highlight-defined-builtin-function-name-face (:foreground gruvbox-neutral_blue :underline t :weight 'bold :slant 'italic))
+  (highlight-defined-special-form-name-face     (:foreground gruvbox-spacemacs-mat :weight 'bold :slant 'italic))
+  (highlight-defined-face-name-face             (:foreground gruvbox-neutral_purple :weight 'bold :slant 'italic))
 
   ;; MODE SUPPORT: fic-mode
   (fic-face                                  (:inherit 'font-lock-warning-face))
@@ -251,13 +251,7 @@
   (rainbow-delimiters-depth-7-face           (:foreground gruvbox-delimiter-three))
   (rainbow-delimiters-depth-8-face           (:foreground gruvbox-delimiter-four))
   (rainbow-delimiters-depth-9-face           (:foreground gruvbox-delimiter-one))
-  (rainbow-delimiters-depth-10-face          (:foreground gruvbox-delimiter-two))
-  (rainbow-delimiters-depth-11-face          (:foreground gruvbox-delimiter-three))
-  (rainbow-delimiters-depth-12-face          (:foreground gruvbox-delimiter-four))
   (rainbow-delimiters-unmatched-face         (:background nil :foreground gruvbox-light0))
-
-  ;; linum-relative
-  (linum-relative-current-face               (:background gruvbox-dark1 :foreground gruvbox-light4))
 
   ;; Highlight indentation mode
   (highlight-indentation-current-column-face (:background gruvbox-dark2))
@@ -269,12 +263,6 @@
   (sp-show-pair-mismatch-face                (:background gruvbox-neutral_red)) ;; Highlight for bracket without pair
   (sp-wrap-overlay-face                      (:inherit 'sp-wrap-overlay-face))
   (sp-wrap-tag-overlay-face                (:inherit 'sp-wrap-overlay-face))
-
-  ;; elscreen
-  (elscreen-tab-background-face              (:background gruvbox-bg :box nil)) ;; Tab bar, not the tabs
-  (elscreen-tab-control-face                 (:background gruvbox-dark2 :foreground gruvbox-neutral_red :underline nil :box nil)) ;; The controls
-  (elscreen-tab-current-screen-face          (:background gruvbox-dark4 :foreground gruvbox-dark0 :box nil)) ;; Current tab
-  (elscreen-tab-other-screen-face            (:background gruvbox-dark2 :foreground gruvbox-light4 :underline nil :box nil)) ;; Inactive tab
 
   ;; ag (The Silver Searcher)
   (ag-hit-face                               (:foreground gruvbox-neutral_blue))
@@ -444,7 +432,6 @@
   (org-scheduled-today                       (:foreground gruvbox-neutral_blue))
   (org-scheduled-previously                  (:foreground gruvbox-faded_red))
   (org-upcoming-deadline                     (:inherit 'font-lock-keyword-face))
-  (org-deadline-announce                     (:foreground gruvbox-faded_red))
   (org-time-grid                             (:foreground gruvbox-faded_orange))
 
   ;; org-habit
@@ -496,14 +483,6 @@
   (anzu-replace-to                           (:foreground gruvbox-bright_yellow))
   (anzu-replace-highlight                    (:inherit 'isearch))
 
-  ;; Ace-jump-mode
-  (ace-jump-face-background                  (:foreground gruvbox-light4 :background gruvbox-bg :inverse-video nil))
-  (ace-jump-face-foreground                  (:foreground gruvbox-bright_red :background gruvbox-bg :inverse-video nil :box 1))
-
-  ;; Ace-window
-  (aw-background-face                        (:forground  gruvbox-light1 :background gruvbox-bg :inverse-video nil))
-  (aw-leading-char-face                      (:foreground gruvbox-bright_orange :background gruvbox-bg :height 4.0 :box (:line-width 1 :color gruvbox-bright_orange)))
-
   ;; show-paren
   (show-paren-match                          (:background gruvbox-dark3 :weight 'bold))
   (show-paren-mismatch                       (:background gruvbox-bright_red :foreground gruvbox-dark3 :weight 'bold))
@@ -530,9 +509,6 @@
   (avy-lead-face-2 (:foreground gruvbox-zerodark-cyan         :background gruvbox-dark2 :inherit 'bold))
   (avy-lead-face-1 (:foreground gruvbox-bright_orange            :background gruvbox-dark2 :inherit 'bold))
 
-  ;; MODE SUPPORT: vim-empty-lines
-  (vim-empty-lines-face                               (:foreground gruvbox-dark2))
-
   ;; MODE SUPPORT: eyebrowse
   (eyebrowse-mode-line-active               (:foreground gruvbox-faded_purple))
   (eyebrowse-mode-line-inactive             (:foreground gruvbox-black))
@@ -546,7 +522,6 @@
   (spaceline-evil-replace (:background gruvbox-muted_red))
 
   ;; web-mode
-  (nxml-element-local-name                  (:foreground gruvbox-bright_purple))
   (web-mode-html-tag-face                   (:foreground gruvbox-bright_purple))
   (web-mode-symbol-face                     (:foreground gruvbox-faded_red))
 
@@ -587,51 +562,16 @@
   (magit-diff-file-heading-highlight         (:foreground gruvbox-faded_purple))
   (magit-diff-file-heading-selection         (:foreground gruvbox-faded_purple))
   (magit-filename                            (:foreground gruvbox-mid_aqua))
-  (magit-diff-hunk-header                    (:foreground gruvbox-neutral_aqua))
-  (magit-diff-merge-current                  (:background gruvbox-dark_yellow))
-  (magit-diff-merge-diff3-separator          (:foreground gruvbox-neutral_orange :weight 'bold))
-  (magit-diff-merge-proposed                 (:background gruvbox-dark_green))
-  (magit-diff-merge-separator                (:foreground gruvbox-neutral_orange))
-  (magit-diff-none                           (:foreground gruvbox-gray))
-  (magit-item-highlight                      (:background gruvbox-dark1 :weight 'normal))
-  (magit-item-mark                           (:background gruvbox-dark0))
-  (magit-key-mode-args-face                  (:foreground gruvbox-light4))
-  (magit-key-mode-button-face                (:foreground gruvbox-neutral_orange :weight 'bold))
-  (magit-key-mode-header-face                (:foreground gruvbox-light4 :weight 'bold))
-  (magit-key-mode-switch-face                (:foreground gruvbox-turquoise4 :weight 'bold))
   (magit-log-author                          (:foreground gruvbox-neutral_aqua))
   (magit-log-date                            (:foreground gruvbox-faded_orange))
   (magit-log-graph                           (:foreground gruvbox-light1))
-  (magit-log-head-label-bisect-bad           (:foreground gruvbox-bright_red))
-  (magit-log-head-label-bisect-good          (:foreground gruvbox-bright_green))
-  (magit-log-head-label-bisect-skip          (:foreground gruvbox-neutral_yellow))
-  (magit-log-head-label-default              (:foreground gruvbox-neutral_blue))
-  (magit-log-head-label-head                 (:foreground gruvbox-light0 :background gruvbox-dark_aqua))
-  (magit-log-head-label-local                (:foreground gruvbox-faded_blue :weight 'bold))
-  (magit-log-head-label-patches              (:foreground gruvbox-faded_orange))
-  (magit-log-head-label-remote               (:foreground gruvbox-neutral_blue :weight 'bold))
-  (magit-log-head-label-tags                 (:foreground gruvbox-neutral_aqua))
-  (magit-log-head-label-wip                  (:foreground gruvbox-neutral_red))
-  (magit-log-message                         (:foreground gruvbox-light1))
-  (magit-log-reflog-label-amend              (:foreground gruvbox-bright_blue))
-  (magit-log-reflog-label-checkout           (:foreground gruvbox-bright_yellow))
-  (magit-log-reflog-label-cherry-pick        (:foreground gruvbox-neutral_red))
-  (magit-log-reflog-label-commit             (:foreground gruvbox-neutral_green))
-  (magit-log-reflog-label-merge              (:foreground gruvbox-bright_green))
-  (magit-log-reflog-label-other              (:foreground gruvbox-faded_red))
-  (magit-log-reflog-label-rebase             (:foreground gruvbox-bright_blue))
-  (magit-log-reflog-label-remote             (:foreground gruvbox-neutral_orange))
-  (magit-log-reflog-label-reset              (:foreground gruvbox-neutral_yellow))
-  (magit-log-sha1                            (:foreground gruvbox-bright_orange))
   (magit-process-ng                          (:foreground gruvbox-bright_red :weight 'bold))
   (magit-process-ok                          (:foreground gruvbox-bright_green :weight 'bold))
   (magit-section-heading                     (:foreground gruvbox-muted_cyan)) ;; above added files
   ;; (magit-section-highlight                   (:foreground gruvbox-light2 :background gruvbox-dark_blue))
   (magit-signature-bad                       (:foreground gruvbox-bright_red :weight 'bold))
   (magit-signature-good                      (:foreground gruvbox-bright_green :weight 'bold))
-  (magit-signature-none                      (:foreground gruvbox-faded_red))
   (magit-signature-untrusted                 (:foreground gruvbox-bright_purple :weight 'bold))
-  (magit-whitespace-warning-face             (:background gruvbox-faded_red))
   (magit-bisect-bad                          (:foreground gruvbox-faded_red))
   (magit-bisect-good                         (:foreground gruvbox-neutral_green))
   (magit-bisect-skip                         (:foreground gruvbox-light2))
