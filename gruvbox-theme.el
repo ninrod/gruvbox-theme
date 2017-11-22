@@ -679,12 +679,12 @@
                       :foreground (face-attribute 'gruvbox-modeline-three-active :foreground)
                       :background (face-attribute 'gruvbox-modeline-three-active :background)
                       :inverse-video nil
-                      :box `(:line-width 6 :color ,(face-attribute 'gruvbox-modeline-three-active :background) :style nil))
+                      :box `(:line-width 10 :color ,(face-attribute 'gruvbox-modeline-three-active :background) :style nil))
   (set-face-attribute 'mode-line-inactive nil
                       :foreground (face-attribute 'gruvbox-modeline-three-inactive :foreground)
                       :background (face-attribute 'gruvbox-modeline-three-inactive :background)
                       :inverse-video nil
-                      :box `(:line-width 6 :color ,(face-attribute 'gruvbox-modeline-three-inactive :background) :style nil)))
+                      :box `(:line-width 10 :color ,(face-attribute 'gruvbox-modeline-three-inactive :background) :style nil)))
 
 ;;;###autoload
 (and load-file-name
