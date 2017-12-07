@@ -269,9 +269,9 @@
   (ag-match-face                             (:foreground gruvbox-neutral_red))
 
   ;; Diffs
-  (diff-changed                              (:background nil :foreground gruvbox-light1))
-  (diff-added                                (:background nil :foreground gruvbox-neutral_green))
-  (diff-removed                              (:background nil :foreground gruvbox-neutral_red))
+  (diff-changed                              (:background gruvbox-dark_yellow :foreground gruvbox-light1))
+  (diff-added                                (:background gruvbox-dark_green :foreground gruvbox-neutral_green))
+  (diff-removed                              (:background gruvbox-dark_red :foreground gruvbox-neutral_red))
   (diff-refine-added                         (:foreground gruvbox-bright_green :background gruvbox-muted_green))
   (diff-refine-removed                       (:foreground gruvbox-bright_red :background gruvbox-muted_red))
   (diff-indicator-changed                    (:inherit 'diff-changed))
