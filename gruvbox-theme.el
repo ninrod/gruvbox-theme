@@ -177,6 +177,8 @@
   (gruvbox-spacemacs-comp        "#d75fd7" "#c56ec3")
   (gruvbox-spacemacs-comment     "#2aa1ae" "#008787")
   (gruvbox-corrupted-dark_purple "#6f44bf" "#4E3D45")
+  (gruvbox-spacemacs-yellow      "#b1951d" "#875f00")
+  (gruvbox-spacemacs-yellow-bg   "#32322c" "#262626")
 
   (gruvbox-bg (cl-case gruvbox-contrast
                 (hard gruvbox-dark0_hard)
@@ -209,6 +211,9 @@
   (font-lock-variable-name-face                      (:foreground gruvbox-neutral_blue))
   (font-lock-type-face                               (:foreground gruvbox-neutral_purple))
   (font-lock-warning-face                            (:foreground gruvbox-neutral_red :background gruvbox-dark_red :bold t))
+
+  ;; MODE SUPPORT: tide
+  (tide-hl-identifier-face                   (:foreground gruvbox-spacemacs-yellow :background gruvbox-spacemacs-yellow-bg))
 
   ;; MODE SUPPORT: highlight-numbers.el
   (highlight-numbers-number                  (:foreground gruvbox-spacemacs-comp))
