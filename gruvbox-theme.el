@@ -400,7 +400,7 @@
 
   ;; org-mode
   (org-meta-line                             (:foreground gruvbox-zerodark-orange-light :slant 'italic))
-  (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark0))
+  (org-block                                 (:foreground gruvbox-light2 :background gruvbox-dark1))
   (org-hide                                  (:foreground gruvbox-dark0))
   (org-level-1                               (:foreground gruvbox-spacemacs-keyword))
   (org-level-2                               (:foreground gruvbox-spacemacs-head2))
